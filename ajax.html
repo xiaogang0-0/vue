@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>demo  ajax</title>
+</head>
+<style>
+#box { width: 100px; height: 100px; background: rgba(0,0,0,0.1); text-align: center;line-height: 100px;}
+</style>
+<body>
+
+<div id="box"></div>
+
+
+
+
+
+</body>
+<script src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript">
+
+  var _src = 'http://result.eolinker.com/YmcWnhA051eb10c4d81fbff2950c8b268c6574269662f59?uri=';
+  var _http=  '/system/role/getList'
+  var _url = _src+_http;
+  // var _url="http://result.eolinker.com/YmcWnhA051eb10c4d81fbff2950c8b268c6574269662f59?uri=/system/role/getInfo"
+
+
+
+var API= {
+  //角色设置    获取角色列表
+    user_getuser: function(obj){
+      // return post('http://result.eolinker.com/YmcWnhA051eb10c4d81fbff2950c8b268c6574269662f59?uri=/system/role/getList' +obj)
+      return $.post('http://result.eolinker.com/YmcWnhA051eb10c4d81fbff2950c8b268c6574269662f59?uri=/system/dept/save',function(){},'json');
+    },
+
+
+
+
+
+
+
+}
+
+
+$('#box').on('click',function(){
+
+        var _this = this;
+        //模块的模板---------------------------------------------------------------------------------------------------
+          API.user_getuser().then(function (data) {
+                  console.log(data)
+                  $(_this).html(data.msg)
+          })
+
+
+
+          
+        // 失败-------------------------------------------------------------------------------------------------------------
+        // $.get(_src+'/system/dept/getList&resultType=failure', 'pid=0', function(data){
+        //     console.log(data)
+        //     $(_this).html(data.msg)
+
+        // },'json')
+
+        // 成功---------------------------------------------------------------------------------------------------------------
+        // $.ajax({
+        //           url:_url,
+        //           type: 'post',
+        //           dataType: 'json',
+        //           data: {'pid':1}
+        //   })
+        //   .done(function(dete) {
+        //     console.log("success");
+        //     console.log(dete);
+        //       $(_this).html(dete.data[0].address)
+        //   })
+        //   .fail(function() {
+        //     // console.log("error",'请求失败');
+        //   })
+        //   .always(function() {
+        //     // console.log("complete完成后执行");
+        //   });
+
+            // 成功---------------------------------------------------------------------------------------------------------------        
+          // $.post(
+          //         'http://result.eolinker.com/YmcWnhA051eb10c4d81fbff2950c8b268c6574269662f59?uri=/system/resource/save', 
+          //         // {id:0,
+          //         //   name:'这是什么',
+          //         //   remark:'没有渠道'
+          //         // }, 
+          //         function(data,) {
+          //             console.log(data)
+          //             $(_this).html(data.data)
+          //         },
+          //         'json'
+          // );
+
+})
+
+
+
+
+
+
+</script>
+
+
+
+</html>
