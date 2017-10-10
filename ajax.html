@@ -42,6 +42,13 @@ var API= {
 
 }
 
+ API.user_getuser().then(function (data) {
+                  console.log(data)
+                  // $(_this).html(data.msg)
+                  $('#box').html(data.msg)
+          })
+
+
 
 $('#box').on('click',function(){
 
@@ -49,7 +56,8 @@ $('#box').on('click',function(){
         //模块的模板---------------------------------------------------------------------------------------------------
           API.user_getuser().then(function (data) {
                   console.log(data)
-                  $(_this).html(data.msg)
+                  // $(_this).html(data.msg)
+                  $('#box').html(data.msg)
           })
 
 
@@ -81,7 +89,7 @@ $('#box').on('click',function(){
         //     // console.log("complete完成后执行");
         //   });
 
-            // 成功---------------------------------------------------------------------------------------------------------------        
+          // 成功---------------------------------------------------------------------------------------------------------------        
           // $.post(
           //         'http://result.eolinker.com/YmcWnhA051eb10c4d81fbff2950c8b268c6574269662f59?uri=/system/resource/save', 
           //         // {id:0,
