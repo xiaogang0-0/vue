@@ -6,7 +6,7 @@
         <div class="clearfix">
           <div class="col-sm-12 col-md-10 col-md-offset-2">
             <div class="logo-title-container">
-              <img class="img-responsive pull-left logo hidden-xs animated fadeIn" src="http://www.laravel.cn/images/backend/logo-icon-light.png" alt="Logo Icon">
+              <!-- <img class="img-responsive pull-left logo hidden-xs animated fadeIn" src="http://www.laravel.cn/images/backend/logo-icon-light.png" alt="Logo Icon"> -->
               <div class="copy animated fadeIn">
                 <h1>Voyager</h1>
                 <p>Welcome to Voyager. The Missing Admin for Laravel</p>
@@ -66,5 +66,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  @import "./assets/css/backend/login.css";
+
 </style>
+  @import "./assets/css/backend/login.css";

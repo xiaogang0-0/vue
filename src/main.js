@@ -18,6 +18,7 @@ router.beforeEach(function (transition) {
         })
     } else {
         next()
+        alert(9)
     }
 });
 new Vue({
