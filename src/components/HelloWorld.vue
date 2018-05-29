@@ -1,13 +1,13 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>基本环节</h2>
+    <h2>Essential Links</h2>
     <ul>
       <li>
         <a
           href="https://vuejs.org"
           target="_blank"
-        >核心文档
+        >
           Core Docs
         </a>
       </li>
@@ -15,7 +15,7 @@
         <a
           href="https://forum.vuejs.org"
           target="_blank"
-        >论坛
+        >
           Forum
         </a>
       </li>
@@ -23,7 +23,7 @@
         <a
           href="https://chat.vuejs.org"
           target="_blank"
-        >社区聊天
+        >
           Community Chat
         </a>
       </li>
@@ -31,7 +31,7 @@
         <a
           href="https://twitter.com/vuejs"
           target="_blank"
-        >推特
+        >
           Twitter
         </a>
       </li>
@@ -40,18 +40,18 @@
         <a
           href="http://vuejs-templates.github.io/webpack/"
           target="_blank"
-        >Docs for this模板
+        >
           Docs for This Template
         </a>
       </li>
     </ul>
-    <h2>生态系统</h2>
+    <h2>Ecosystem</h2>
     <ul>
       <li>
         <a
           href="http://router.vuejs.org/"
           target="_blank"
-        >查看路由
+        >
           vue-router
         </a>
       </li>
@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'test测试'
+      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
@@ -108,6 +108,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #ccc;
+  color: #42b983;
 }
 </style>
