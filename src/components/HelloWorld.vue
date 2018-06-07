@@ -147,4 +147,8 @@ jmexpander {
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+  * {
+    box-sizing: border-box;
+  }
 </style>
