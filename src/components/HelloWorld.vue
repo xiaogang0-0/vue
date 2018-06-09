@@ -141,7 +141,7 @@ jmexpander {
 
 
   body {
-    font-family: 微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #ecf1f7;
 
     padding:0;
