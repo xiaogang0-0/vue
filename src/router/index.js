@@ -14,6 +14,7 @@ Vue.use(iView);
 
 export default new Router({
   mode:'history',
+  linkActiveClass:'isactive',//修改选中的className
   routes: [
     {
       path: '/',

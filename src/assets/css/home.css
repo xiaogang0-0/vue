@@ -195,4 +195,9 @@ background-color: rgba(0, 0, 0, 0.3);
         position: relative;
         border: 1px solid #eee;
     }
-
+/*.ivu-menu-item-active,
+.router-link-active
+ {
+  background: #fff;
+  color: #ccc;
+}*/

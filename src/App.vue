@@ -22,15 +22,22 @@
           </template>
     
           
-          <MenuItem name="1-2">
+          <MenuItem name="1-0">
         	  <router-link to="/nav">nav</router-link>	
           </MenuItem>
-           <MenuItem name="1-2">
+           <MenuItem name="1-1">
           	<router-link to="/nav1">nav1</router-link>	
           </MenuItem>
            <MenuItem name="1-2">
           	<router-link to="/nav2">nav2</router-link>	
           </MenuItem>
+         <!--  <MenuItem name="1-2">
+          	<router-link :to="index">nav3</router-link>	
+          </MenuItem>
+          <MenuItem name="1-2">
+          	<router-link :to="{path:'/nav1'}" tag="div">nav3</router-link>	
+          </MenuItem> -->
+        
             
         </Submenu>
         <Submenu name="2">
@@ -83,6 +90,7 @@
    export default {
       data () {
         return {
+        	index:'/nav',
           cityList: [
             {
               value: '元课堂',
